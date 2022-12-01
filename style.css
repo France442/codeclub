@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Outfit&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    position: fixed;
+}
+
+body{
+    background-size: cover;
+      background-image:url(cool-background.png);
+}
+
+#home{
+    margin: 10px;
+    color: rgb(39, 39, 39);
+}
+
+#home h1{
+    color: rgb(39, 39, 39);
+    font-size: 100px;
+}
+
+h1{
+    color: azure;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+}
+
+/************************Services section Begins****************************************/
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    font-family: 'Kanit', sans-serif;
+}
+
+.services img{
+    width:50%;
+}
+
+.service{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+}
+  
+/************************Services section Ends****************************************/
+
+
+/******************************Team Section Begins***********************************/
+
+
+.team-section .title{
+    color: azure;
+    padding-top: 120px;
+}
+
+.team{
+    display: grid;
+}
+
+.ttwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+}
+
+.tone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.profile-card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background:white ;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: 2s;
+    margin: auto;
+}
+
+.profile-card:hover{
+    border-radius: 8px;
+    height: 300px;
+}
+
+.profile-card .image{
+    position:relative ;
+    width:100% ;
+    height:80%;
+    transition: 2s;
+}
+
+.profile-card:hover .image{
+    transform: translateY(-60px);
+    transition: 2s;
+}
+
+
+.image img{
+    width: 100%;
+    transition: 2s;
+}
+
+.caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: 2s;
+  }
+  .profile-card:hover .caption{
+    opacity: 100%;
+    padding-bottom: 10px;
+  }
+  .caption h3{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    padding-top: 1px;
+  }
+  .caption p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    color: #0c52a1;
+    margin: 2px 0 9px 0;
+  }
+  .caption .socials a{
+    color: #333;
+    margin-right: 8px;
+    font-size: 21px;
+    transition: 2s;
+  }
+
+p.quote{
+    color: yellowgreen;
+    line-height: 15px;
+  }
+
+  .socials a:hover{
+    color: #0c52a1;
+  }
+/****************************Team section over************************************/
+
+
+/*****************contact-us******************/
+#contact-Us{
+    padding-top: 100px;
+    margin: 10px;
+}
+
+
+
+@media (min-width: 1160px){
+
+    .team-section .title{
+        color: azure;
+        padding-top: 10px;
+    }
+
+    .ttwo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .tone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    .team-section .title{
+        color: azure;
+        padding-top: 200px;
+    }
+
+    .ttwo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .tone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+
+@media (min-width: 1278px) {
+    .team-section .title{
+        color: azure;
+        padding-top: 150px;
+    }
+
+    .ttwo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .tone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+    }
+    
+}
+
+@media (orientation: portrait) {
+    .team-section .title{
+        color: azure;
+        padding-top: 10px;
+    }
+
+    .ttwo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+    }
+    
+    .tone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+    }
+
+}
