@@ -21,7 +21,7 @@ body{
 
 #home h1{
     color: rgb(39, 39, 39);
-    font-size: 100px;
+    font-size: 10rem;
 }
 
 h1{
@@ -62,7 +62,7 @@ footer{
 /******************************Team Section Begins***********************************/
 
 
-.team-section .title{
+#team .title{
     color: azure;
     padding-top: 120px;
 }
@@ -101,7 +101,7 @@ footer{
 
 .profile-card:hover{
     border-radius: 8px;
-    height: 300px;
+    height: 280px;
 }
 
 .profile-card .image{
@@ -168,6 +168,107 @@ p.quote{
 }
 
 
+@media (min-width: 1024px){
+      #team{
+        margin-top: 65px
+      }
+     
+      .tone{
+        margin-bottom: 50px;
+      }
+
+      .ttwo{
+        margin-bottom: 75px;
+      }
+      .profile-card{
+        position: relative;
+        width: 220px;
+        height: 220px;
+        background:white ;
+        padding: 30px;
+        border-radius: 50%;
+        box-shadow: 0 0 22px #3336;
+        transition: 2s;
+        margin: auto;
+    }
+    
+    .profile-card:hover{
+        border-radius: 8px;
+        height: 280px;
+    }
+    
+    .profile-card .image{
+        position:relative ;
+        width:100% ;
+        height:80%;
+        transition: 2s;
+    }
+    
+    .profile-card:hover .image{
+        transform: translateY(-60px);
+        transition: 2s;
+    }
+    
+    
+    .image img{
+        width: 100%;
+        transition: 2s;
+    }
+    
+    .caption{
+        text-align: center;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: 2s;
+      }
+      .profile-card:hover .caption{
+        opacity: 100%;
+        padding-bottom: 10px;
+      }
+      .caption h3{
+        font-family: 'Kanit', sans-serif;
+        font-size: 30px;
+        padding-top: 1px;
+      }
+      .caption p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 16px;
+        color: #0c52a1;
+        margin: 2px 0 9px 0;
+      }
+      .caption .socials a{
+        color: #333;
+        margin-right: 8px;
+        font-size: 21px;
+        transition: 2s;
+      }
+    
+    p.quote{
+        color: yellowgreen;
+        line-height: 15px;
+      }
+    
+      .socials a:hover{
+        color: #0c52a1;
+      }
+    }
+
+
+@media (min-width: 768px){
+
+    #typing{
+        font-size: 9rem;
+    }
+
+    #team{
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+    }
+
+
+
+
 
 @media (min-width: 1160px){
 
@@ -192,13 +293,88 @@ p.quote{
         height: 20vh;
     }
 
+    .profile-card{
+        position: relative;
+        width: 220px;
+        height: 220px;
+        background:white ;
+        padding: 30px;
+        border-radius: 50%;
+        box-shadow: 0 0 22px #3336;
+        transition: 2s;
+        margin: auto;
+    }
+    
+    .profile-card:hover{
+        border-radius: 8px;
+        height: 280px;
+    }
+    
+    .profile-card .image{
+        position:relative ;
+        width:100% ;
+        height:80%;
+        transition: 2s;
+    }
+    
+    .profile-card:hover .image{
+        transform: translateY(-60px);
+        transition: 2s;
+    }
+    
+    
+    .image img{
+        width: 100%;
+        transition: 2s;
+    }
+    
+    .caption{
+        text-align: center;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: 2s;
+      }
+      .profile-card:hover .caption{
+        opacity: 100%;
+        padding-bottom: 10px;
+      }
+      .caption h3{
+        font-family: 'Kanit', sans-serif;
+        font-size: 30px;
+        padding-top: 1px;
+      }
+      .caption p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 16px;
+        color: #0c52a1;
+        margin: 2px 0 9px 0;
+      }
+      .caption .socials a{
+        color: #333;
+        margin-right: 8px;
+        font-size: 21px;
+        transition: 2s;
+      }
+    
+    p.quote{
+        color: yellowgreen;
+        line-height: 15px;
+      }
+    
+      .socials a:hover{
+        color: #0c52a1;
+      }
+
 }
 
 @media (min-width: 1440px){
 
-    .team-section .title{
+     #team{
+        margin-top: 60px ;
+     }
+
+    #team .title{
         color: azure;
-        padding-top: 200px;
     }
 
     .ttwo{
@@ -207,6 +383,7 @@ p.quote{
         align-items: center;
         width: 100%;
         height: 30vh;
+        margin-bottom: 65px;
     }
     
     .tone{
@@ -215,15 +392,16 @@ p.quote{
         align-items: center;
         width: 100%;
         height: 50vh;
+        margin-bottom: 50px;
     }
 
 }
 
 
 @media (min-width: 1278px) {
-    .team-section .title{
+    #team .title{
         color: azure;
-        padding-top: 150px;
+        padding-top: 65px;
     }
 
     .ttwo{
@@ -241,11 +419,83 @@ p.quote{
         width: 100%;
         height: 50vh;
     }
+
+    .profile-card{
+        position: relative;
+        width: 220px;
+        height: 220px;
+        background:white ;
+        padding: 30px;
+        border-radius: 50%;
+        box-shadow: 0 0 22px #3336;
+        transition: 2s;
+        margin: auto;
+    }
+    
+    .profile-card:hover{
+        border-radius: 8px;
+        height: 280px;
+    }
+    
+    .profile-card .image{
+        position:relative ;
+        width:100% ;
+        height:80%;
+        transition: 2s;
+    }
+    
+    .profile-card:hover .image{
+        transform: translateY(-60px);
+        transition: 2s;
+    }
+    
+    
+    .image img{
+        width: 100%;
+        transition: 2s;
+    }
+    
+    .caption{
+        text-align: center;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: 2s;
+      }
+      .profile-card:hover .caption{
+        opacity: 100%;
+        padding-bottom: 10px;
+      }
+      .caption h3{
+        font-family: 'Kanit', sans-serif;
+        font-size: 30px;
+        padding-top: 1px;
+      }
+      .caption p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 16px;
+        color: #0c52a1;
+        margin: 2px 0 9px 0;
+      }
+      .caption .socials a{
+        color: #333;
+        margin-right: 8px;
+        font-size: 21px;
+        transition: 2s;
+      }
+    
+    p.quote{
+        color: yellowgreen;
+        line-height: 15px;
+      }
+    
+      .socials a:hover{
+        color: #0c52a1;
+      }
     
 }
 
 @media (orientation: portrait) {
-    .team-section .title{
+    #team .title{
         color: azure;
         padding-top: 10px;
     }
@@ -265,5 +515,84 @@ p.quote{
         width: 100%;
         height: 20vh;
     }
-
 }
+   
+@media (min-width: 2560px) {
+    
+    body{
+        font-size: 10rem;
+    }
+
+    .profile-card{
+        position: relative;
+        width: 220px;
+        height: 220px;
+        background:white ;
+        padding: 30px;
+        border-radius: 50%;
+        box-shadow: 0 0 22px #3336;
+        transition: 2s;
+        margin: auto;
+    }
+    
+    .profile-card:hover{
+        border-radius: 8px;
+        height: 280px;
+    }
+    
+    .profile-card .image{
+        position:relative ;
+        width:100% ;
+        height:80%;
+        transition: 2s;
+    }
+    
+    .profile-card:hover .image{
+        transform: translateY(-60px);
+        transition: 2s;
+    }
+    
+    
+    .image img{
+        width: 100%;
+        transition: 2s;
+    }
+    
+    .caption{
+        text-align: center;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: 2s;
+      }
+      .profile-card:hover .caption{
+        opacity: 100%;
+        padding-bottom: 10px;
+      }
+      .caption h3{
+        font-family: 'Kanit', sans-serif;
+        font-size: 30px;
+        padding-top: 1px;
+      }
+      .caption p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 16px;
+        color: #0c52a1;
+        margin: 2px 0 9px 0;
+      }
+      .caption .socials a{
+        color: #333;
+        margin-right: 8px;
+        font-size: 21px;
+        transition: 2s;
+      }
+    
+    p.quote{
+        color: yellowgreen;
+        line-height: 15px;
+      }
+    
+      .socials a:hover{
+        color: #0c52a1;
+      }
+
+    }
