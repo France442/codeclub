@@ -4,86 +4,150 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="shortcut icon" href="CCA-modified.png" type="image/x-icon">
     <title>Code Club Academy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Code Club Academy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#drop" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="drop">
-        <ul class="navbar-nav ms-auto">
-        <li class="nav-item"> 
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item"> 
-          <a class="nav-link" href="#services-section">Services</a>
-        </li>
-        <li class="nav-item"> 
-          <a class="nav-link" href="#team-section">Team</a>
-        </li>
-        <li class="nav-item"> 
-          <a class="nav-link" href="#contact-Us">Contact Us</a>
-        </li>
-      </ul>
-    </div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="CCA-modified.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img class="logo2" src="CCA-modified.png" alt="logo"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav j flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service-section">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact-Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
+
+
+<!-- home begins -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <div id="home">
-<h1> <span id="typing">Welcome</span></h1>
- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eligendi molestiae incidunt dolor animi magni tempora tenetur, nobis dicta ad totam repudiandae quasi laudantium ullam sequi quas voluptatum. Consectetur explicabo atque excepturi dignissimos aut, ipsum mollitia enim voluptatum. Doloremque ipsum temporibus sed amet, sequi maxime recusandae quibusdam, nulla itaque debitis a beatae, pariatur voluptatibus qui veritatis quas excepturi laborum odit vero! Assumenda, et fugiat deserunt quisquam reiciendis beatae minima maiores? Fugit nesciunt provident dignissimos est minus esse soluta recusandae, praesentium magni earum accusantium veniam repellat ut laboriosam maxime fugiat aut inventore ad illo, debitis deleniti. Voluptatem tenetur quaerat velit ipsum?
-</p>  
+<div id="home">
+  <h1> <span id="typing">Welcome</span></h1>
+  <p class="home-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates aliquam perspiciatis delectus necessitatibus voluptatem unde minus mollitia fugit possimus voluptatum!</p>  
 </div>
 
-  <div id="services-section">
-    <h1>Our Services</h1>
-<div class="services">
+<!-- home end -->
 
-  <div class="service">
-    <div class="graphic">
-      <img src="graphic.png" alt="Graphic Designing">
-      <h3>Graphic Designing</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas repudiandae ea exercitationem sint laborum rem repellendus neque quam quod.</p>
+
+<!-- Service Section -->
+<div id="service-section">
+  <h1>What We Do</h1>
+  <hr class="line">
+  <div class="container-fluid">
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-4 m-auto">
+      <!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="hacking.png" alt="Ethical hacking">
+        <div class="text">
+          <h3>Ethical hacking</h3>
+          <hr class="service-line">
+      <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloremque consequuntur ipsa architecto voluptatibus quaerat culpa odio neque velit quidem!</p>
+        </div>
+      </div>
     </div>
-  </div>
+<!-- Card Ends -->
 
-  <div class="service">
-    <div class="web">
-      <img src="coding.png" alt="Web Development">
-      <h3>Web Development</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit recusandae unde cum esse quidem quibusdam excepturi officia illo asperiores ratione.</p>
+    <div class="col-12 col-sm-6 col-md-4 m-auto">
+<!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="App Dev.png" alt="Ethical hacking">
+        <div class="text">
+          <h3>App Development</h3>
+          <hr class="service-line">
+          <p class="service-text">Lorem, ipsum dolor sit amet consectetur sandae voluptatibus! Sequi cumque laudantium commodi placeat autem reiciendis facere aspernatur.</p>
+        </div>
+      </div>
     </div>
-  </div>
+<!-- Card Ends -->
 
-  <div class="service">
-    <div class="robot">
-      <img src="robot.png" alt="Robotics">
-      <h3>Robotics</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem amet, itaque libero earum nam eum provident laudantium tenetur ut laboriosam.</p>
+    <div class="col-12 col-sm-6 col-md-4 m-auto">
+<!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="robot.png" alt="Ethical hacking">
+        <div class="text">
+          <h3>Robotics</h3>
+          <hr class="service-line">
+          <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius saepe aspernatur eum sint rerum iusto nihil asperiores dolorum provident!</p>
+            </div>
+      </div>
     </div>
-  </div>
+<!-- Card Ends -->
 
-  <div class="service">
-    <div class="hacking">
-      <img src="hacking.png" alt="Ethical Hacking">
-     <h3>Ethical Hacking</h3>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis tempora ad voluptate rerum earum aut atque itaque deleniti in!</p>
+    <div class="col-12 col-sm-6 col-md-4 m-auto">
+<!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="graphic.png" alt="Ethical hacking">
+        <div class="text">
+          <h3>Graphic Designing</h3>
+          <hr class="service-line">
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis consequatur explicabo! Esse, harum deserunt eius porro ea pariatur praesentium.</p>  
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
+<!-- Card Ends -->
 
-  </div>
+    <div class="col-12 col-sm-6 col-md-4 m-auto">
+<!-- Card Begins -->
+      <div class="card ">
+      <img class="service-logo" src="coding.png" alt="Ethical hacking">
+        <div class="text">
+          <h3>Web Development</h3>
+          <hr class="service-line">
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid quod sint ipsum officiis nam explicabo possimus asperiores ut cum?</p>  
+        </div>
+      </div>
+    </div>
+<!-- Card Ends -->
 
-  <div class="team-section">
+    </div>
+</div>
+</div>
+
+<!-- Service Section ends -->
+
+
+
+<!-- Team section begins -->
+  <div id="team-section">
     <h1 class="title">The Team</h1>
+    <hr class="line">
+    <div class="row">
    <div class="team">
-        <div class="tone">
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
              <div class="profile-card">
               <div class="image">
                 <img src="CCA-modified.png" alt="CEO">
@@ -96,8 +160,11 @@
                       <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                       <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                      </div>
-              </div>
+                    </div>
+                    </div>
              </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6">
              <div class="profile-card">
               <div class="image">
                 <img src="CCA-modified.png" alt="CEO">
@@ -111,7 +178,10 @@
                       <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                      </div>
               </div>
+              </div>
              </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6">
              <div class="profile-card">
               <div class="image">
                 <img src="CCA-modified.png" alt="CEO">
@@ -126,7 +196,9 @@
                      </div>
               </div>
              </div>
+           </div>
 
+           <div class="col-lg-3 col-md-4 col-sm-6">
              <div class="profile-card">
               <div class="image">
                 <img src="Profile-modified.png" alt="CEO">
@@ -139,13 +211,12 @@
                       <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                       <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                      </div>
-              </div>
+         </div>
              </div>
               </div>
-             </div>  
-             
-             <div class="ttwo">
-               
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="profile-card">
                <div class="image">
                  <img src="CCA-modified.png" alt="CEO">
@@ -160,6 +231,9 @@
                       </div>
                </div>
               </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="profile-card">
                <div class="image">
                  <img src="CCA-modified.png" alt="CEO">
@@ -173,7 +247,10 @@
                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                       </div>
                </div>
-              </div>  
+              </div> 
+              </div>
+              
+              <div class="col-lg-3 col-md-4 col-sm-6 tt">
               <div class="profile-card">
                 <div class="image">
                   <img src="CCA-modified.png" alt="CEO">
@@ -187,31 +264,43 @@
                         <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                        </div>
               </div>
+               </div> 
+               </div>
+
+               <div class="col-lg-3 col-md-4 col-sm-6 tt ">
+               <div class="profile-card">
+                <div class="image">
+                  <img src="CCA-modified.png" alt="CEO">
+                </div>
+                <div class="caption">
+                       <h3>Stanle
+                       <p>App Developer</p>
+                      <p class="quote">"Art is An Explosion"</p> 
+                       <div class="socials">
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                       </div>
+              </div>
+              </div>
                </div>  
-             </div>
+              </div>
    </div>
 
+   <!-- team section ends -->
                          
   
-  <div id="contact-Us"> 
+  <div id="contact-us"> 
     <h1>Get In Touch</h1>
+    <hr class="line">
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam quasi officiis, nostrum excepturi eligendi vitae sequi id itaque nulla doloremque necessitatibus molestiae similique pariatur ipsum, dignissimos quae inventore rem?</p>
   </div>
+
+
+  <!-- typing Animation -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <footer>
     <p class="copy">© 2023 CodeClub Academy </p>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
   <script>
      function sleep(ms) {
       return new Promise ((resolve) => setTimeout(resolve, ms));
@@ -253,5 +342,8 @@
      writeLoop();
 
 </script>
+
+<!-- typing Animation ends -->
+
   </body>
 </html>
