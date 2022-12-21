@@ -5,56 +5,109 @@
     margin: 0;
 }
 
-.navbar{
-    position: fixed;
+body{
+    background-color: #1A1A2E;
 }
 
-body{
-    background-size: cover;
-      background-image:url(cool-background.png);
-}
+/* home section */
 
 #home{
-    margin: 10px;
-    color: rgb(39, 39, 39);
+    color: #FFF;
+    margin: 7% 10% 10%;
+}
+
+.home-text{
+    padding-top: 10%;
+    text-align: center;
 }
 
 #home h1{
-    color: rgb(39, 39, 39);
     font-size: 10rem;
 }
 
 h1{
-    color: azure;
+    color:#FFF;
     font-family: 'Kanit', sans-serif;
     text-align: center;
 }
 
+/***************** home Ends ******************/
 
-footer{
+
+/****** footer *******/
+footer{ 
+    color: #FFF;    
     text-align: center;
+    margin: 5% 10% 2%;
 }
+
+/****** footer-ends *******/
+
+
 
 /************************Services section Begins****************************************/
-.services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 25vh;
-    font-family: 'Kanit', sans-serif;
+.service-section h1{
+    color: #FFF;
 }
 
-.services img{
-    width:50%;
+.service-text{
+    padding: 0 8%;
 }
 
-.service{
-    width: 50%;
-    margin: auto;
+.service-logo{
+    color: #FFF;
+}
+
+.service-line{
+    padding: 3% 0 1%;
+    width: 30%;
+    margin: 3% auto;
+}
+
+#service-section{
+    margin: 7% 10%;
+}
+
+.card img{
+   margin: auto;
+   width:70%;
+}
+
+.card{
+    margin: 10%;
+    width: 85%;
+    background-color: #1A1A2E;
+    color: #FFF;
     text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
 
 }
+
+.card:hover{
+    box-shadow: 0 0px 5px #FFF;
+    color: #1A1A2E;
+}
+
+
+.card::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+ 
+.card:hover::before{
+    top:0%;
+}
+
+
   
 /************************Services section Ends****************************************/
 
@@ -63,28 +116,13 @@ footer{
 
 
 #team .title{
-    color: azure;
+    color: #FFF;
     padding-top: 120px;
 }
 
-.team{
-    display: grid;
-}
-
-.ttwo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 25vh;
-}
-
-.tone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
+#team-section{
+    padding-bottom: 15%;
+    margin: 7% 10% 0;
 }
 
 .profile-card{
@@ -94,7 +132,7 @@ footer{
     background:white ;
     padding: 30px;
     border-radius: 50%;
-    box-shadow: 0 0 22px #3336;
+    box-shadow: 0 0 10px #FFF;
     transition: 2s;
     margin: auto;
 }
@@ -162,437 +200,38 @@ p.quote{
 
 
 /*****************contact-us******************/
-#contact-Us{
+#contact-us{
+    text-align: center;
+    color: #FFF;
     padding-top: 100px;
-    margin: 10px;
+    margin: 7% 10% 0;
 }
 
 
-@media (min-width: 1024px){
-      #team{
-        margin-top: 65px
-      }
-     
-      .tone{
-        margin-bottom: 50px;
-      }
-
-      .ttwo{
-        margin-bottom: 75px;
-      }
-      .profile-card{
-        position: relative;
-        width: 220px;
-        height: 220px;
-        background:white ;
-        padding: 30px;
-        border-radius: 50%;
-        box-shadow: 0 0 22px #3336;
-        transition: 2s;
-        margin: auto;
-    }
-    
-    .profile-card:hover{
-        border-radius: 8px;
-        height: 280px;
-    }
-    
-    .profile-card .image{
-        position:relative ;
-        width:100% ;
-        height:80%;
-        transition: 2s;
-    }
-    
-    .profile-card:hover .image{
-        transform: translateY(-60px);
-        transition: 2s;
-    }
-    
-    
-    .image img{
-        width: 100%;
-        transition: 2s;
-    }
-    
-    .caption{
-        text-align: center;
-        transform: translateY(-80px);
-        opacity: 0;
-        transition: 2s;
-      }
-      .profile-card:hover .caption{
-        opacity: 100%;
-        padding-bottom: 10px;
-      }
-      .caption h3{
-        font-family: 'Kanit', sans-serif;
-        font-size: 30px;
-        padding-top: 1px;
-      }
-      .caption p{
-        font-family: 'Kanit', sans-serif;
-        font-size: 16px;
-        color: #0c52a1;
-        margin: 2px 0 9px 0;
-      }
-      .caption .socials a{
-        color: #333;
-        margin-right: 8px;
-        font-size: 21px;
-        transition: 2s;
-      }
-    
-    p.quote{
-        color: yellowgreen;
-        line-height: 15px;
-      }
-    
-      .socials a:hover{
-        color: #0c52a1;
-      }
-    }
-
-
-@media (min-width: 768px){
-
-    #typing{
-        font-size: 9rem;
-    }
-
-    #team{
-      margin-top: 20px;
-      padding-top: 20px;
-    }
-    }
-
-
-
-
-
-@media (min-width: 1160px){
-
-    .team-section .title{
-        color: azure;
-        padding-top: 10px;
-    }
-
-    .ttwo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 20vh;
-    }
-    
-    .tone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 20vh;
-    }
-
-    .profile-card{
-        position: relative;
-        width: 220px;
-        height: 220px;
-        background:white ;
-        padding: 30px;
-        border-radius: 50%;
-        box-shadow: 0 0 22px #3336;
-        transition: 2s;
-        margin: auto;
-    }
-    
-    .profile-card:hover{
-        border-radius: 8px;
-        height: 280px;
-    }
-    
-    .profile-card .image{
-        position:relative ;
-        width:100% ;
-        height:80%;
-        transition: 2s;
-    }
-    
-    .profile-card:hover .image{
-        transform: translateY(-60px);
-        transition: 2s;
-    }
-    
-    
-    .image img{
-        width: 100%;
-        transition: 2s;
-    }
-    
-    .caption{
-        text-align: center;
-        transform: translateY(-80px);
-        opacity: 0;
-        transition: 2s;
-      }
-      .profile-card:hover .caption{
-        opacity: 100%;
-        padding-bottom: 10px;
-      }
-      .caption h3{
-        font-family: 'Kanit', sans-serif;
-        font-size: 30px;
-        padding-top: 1px;
-      }
-      .caption p{
-        font-family: 'Kanit', sans-serif;
-        font-size: 16px;
-        color: #0c52a1;
-        margin: 2px 0 9px 0;
-      }
-      .caption .socials a{
-        color: #333;
-        margin-right: 8px;
-        font-size: 21px;
-        transition: 2s;
-      }
-    
-    p.quote{
-        color: yellowgreen;
-        line-height: 15px;
-      }
-    
-      .socials a:hover{
-        color: #0c52a1;
-      }
-
+/* navbar */
+nav{
+    margin: 0 10% 10%;
+    background-color: #1A1A2E;
 }
 
-@media (min-width: 1440px){
-
-     #team{
-        margin-top: 60px ;
-     }
-
-    #team .title{
-        color: azure;
-    }
-
-    .ttwo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 30vh;
-        margin-bottom: 65px;
-    }
-    
-    .tone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50vh;
-        margin-bottom: 50px;
-    }
-
+.nav-item{
+    color: #FFF;
 }
 
-
-@media (min-width: 1278px) {
-    #team .title{
-        color: azure;
-        padding-top: 65px;
-    }
-
-    .ttwo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 30vh;
-    }
-    
-    .tone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50vh;
-    }
-
-    .profile-card{
-        position: relative;
-        width: 220px;
-        height: 220px;
-        background:white ;
-        padding: 30px;
-        border-radius: 50%;
-        box-shadow: 0 0 22px #3336;
-        transition: 2s;
-        margin: auto;
-    }
-    
-    .profile-card:hover{
-        border-radius: 8px;
-        height: 280px;
-    }
-    
-    .profile-card .image{
-        position:relative ;
-        width:100% ;
-        height:80%;
-        transition: 2s;
-    }
-    
-    .profile-card:hover .image{
-        transform: translateY(-60px);
-        transition: 2s;
-    }
-    
-    
-    .image img{
-        width: 100%;
-        transition: 2s;
-    }
-    
-    .caption{
-        text-align: center;
-        transform: translateY(-80px);
-        opacity: 0;
-        transition: 2s;
-      }
-      .profile-card:hover .caption{
-        opacity: 100%;
-        padding-bottom: 10px;
-      }
-      .caption h3{
-        font-family: 'Kanit', sans-serif;
-        font-size: 30px;
-        padding-top: 1px;
-      }
-      .caption p{
-        font-family: 'Kanit', sans-serif;
-        font-size: 16px;
-        color: #0c52a1;
-        margin: 2px 0 9px 0;
-      }
-      .caption .socials a{
-        color: #333;
-        margin-right: 8px;
-        font-size: 21px;
-        transition: 2s;
-      }
-    
-    p.quote{
-        color: yellowgreen;
-        line-height: 15px;
-      }
-    
-      .socials a:hover{
-        color: #0c52a1;
-      }
-    
+.line{
+    width: 30%;
+    color: #FFF;
+    padding-top: 20px;
+    margin: 50px auto;
 }
 
-@media (orientation: portrait) {
-    #team .title{
-        color: azure;
-        padding-top: 10px;
-    }
-
-    .ttwo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 15vh;
-    }
-    
-    .tone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 20vh;
-    }
+.offcanvas{
+    background-color: #1A1A2E;
+    color: #FFF;
 }
-   
-@media (min-width: 2560px) {
-    
-    body{
-        font-size: 10rem;
-    }
 
-    .profile-card{
-        position: relative;
-        width: 220px;
-        height: 220px;
-        background:white ;
-        padding: 30px;
-        border-radius: 50%;
-        box-shadow: 0 0 22px #3336;
-        transition: 2s;
-        margin: auto;
-    }
-    
-    .profile-card:hover{
-        border-radius: 8px;
-        height: 280px;
-    }
-    
-    .profile-card .image{
-        position:relative ;
-        width:100% ;
-        height:80%;
-        transition: 2s;
-    }
-    
-    .profile-card:hover .image{
-        transform: translateY(-60px);
-        transition: 2s;
-    }
-    
-    
-    .image img{
-        width: 100%;
-        transition: 2s;
-    }
-    
-    .caption{
-        text-align: center;
-        transform: translateY(-80px);
-        opacity: 0;
-        transition: 2s;
-      }
-      .profile-card:hover .caption{
-        opacity: 100%;
-        padding-bottom: 10px;
-      }
-      .caption h3{
-        font-family: 'Kanit', sans-serif;
-        font-size: 30px;
-        padding-top: 1px;
-      }
-      .caption p{
-        font-family: 'Kanit', sans-serif;
-        font-size: 16px;
-        color: #0c52a1;
-        margin: 2px 0 9px 0;
-      }
-      .caption .socials a{
-        color: #333;
-        margin-right: 8px;
-        font-size: 21px;
-        transition: 2s;
-      }
-    
-    p.quote{
-        color: yellowgreen;
-        line-height: 15px;
-      }
-    
-      .socials a:hover{
-        color: #0c52a1;
-      }
+.logo{
+    width: 6%;
+}
 
-    }
+/* nav bar ends */
